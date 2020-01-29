@@ -1,4 +1,11 @@
 /*margin 0 auto */
+
+
+
+#nav li {
+    display: inline;
+}
+
 .section {
     border: 1px solid red;
     margin-left: 2%;
