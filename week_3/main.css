@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Short Stack', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+#content {
+    padding: 3%;
+}
+
+.important {
+    color: red;
+}
+
+nav {
+    background-color: #B22A0C;
+}
+
+nav ul {
+    width: 115px;
+    margin-left: 30%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+section {
+    border: 2px solid red;
+    padding: 3%;
+    width: 26%;
+    float: left;
+}
+
+@media (max-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media (max-width : 480px) {
+    h1 {
+        font-size: 15px !important; 
+    }
+    section p {
+        font-size: 10px;    
+    }
+}
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+    #optional-heading {
+        display: none;
+    }
+
+    section {
+        width: 95%;
+        float: none;
+        margin-top: 2%;
+    }
+
+ 
+
+    
+
+}
+
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+    
+    body {
+        background-color: green;
+    }
+    
+    h1 {
+            font-size: 30px;
+        }
+
+        .first-section {
+
+            width: 95%
+        }
+
+        .second-section, .third-section {
+            width: 40%;
+            float: left;
+        }
+}
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1200px) {
+
+}
+
+
+/** by default everything else is larger than 1200px **/
