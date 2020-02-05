@@ -49,14 +49,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
 /* Large Devices, Wide Screens */
 @media (max-width : 1200px) {
 
@@ -96,10 +88,14 @@ section {
 /* Extra Small Devices, Phones */ 
 @media (max-width : 480px) {
     h1 {
-        font-size: 15px !important; 
+        font-size: 15px; 
     }
     section p {
         font-size: 10px;    
+    }
+
+    .second-section, .third-section {
+        width: 95%;
     }
 }
 
