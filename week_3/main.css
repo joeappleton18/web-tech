@@ -45,35 +45,20 @@ section {
     float: left;
 }
 
-@media (max-width : 320px) {
 
-}
 
-/* Extra Small Devices, Phones */ 
-@media (max-width : 480px) {
-    h1 {
-        font-size: 15px !important; 
-    }
-    section p {
-        font-size: 10px;    
-    }
-}
 
-/* Small Devices, Tablets */
-@media (max-width : 768px) {
-    #optional-heading {
-        display: none;
-    }
 
-    section {
-        width: 95%;
-        float: none;
-        margin-top: 2%;
-    }
 
- 
 
-    
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1200px) {
 
 }
 
@@ -88,21 +73,37 @@ section {
             font-size: 30px;
         }
 
-        .first-section {
-
-            width: 95%
-        }
-
         .second-section, .third-section {
             width: 40%;
             float: left;
         }
 }
 
-/* Large Devices, Wide Screens */
-@media (max-width : 1200px) {
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+    #optional-heading {
+        display: none;
+    }
 
+    section {
+        width: 95%;
+        float: none;
+        margin-top: 2%;
+    }
 }
+
+
+/* Extra Small Devices, Phones */ 
+@media (max-width : 480px) {
+    h1 {
+        font-size: 15px !important; 
+    }
+    section p {
+        font-size: 10px;    
+    }
+}
+
+
 
 
 /** by default everything else is larger than 1200px **/
