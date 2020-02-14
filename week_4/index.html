@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>From</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <p>
+        <label for="name"> Name: </label>
+        <input type="text" name="name" id="name" required />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </p>
+      <p>
+        <label for="number">Number:</label
+        ><input type="tel" name="number" id="number" required />
+      </p>
+      <p>
+        <label for="year">What year are you in?</label>
+        <select name="year" id="year" required>
+          <option value=""> Please Select</option>
+          <option value="1">Year 1</option>
+          <option value="2">Year 2 </option>
+          <option value="3">Year 3 </option>
+        </select>
+      </p>
+      <p>What electronic device do you use?</p>
+      <p><input type="checkbox" name="device" /> Computer</p>
+      <p><input type="checkbox" name="device" />E book reader</p>
+      <p><input type="checkbox" name="device" /> Smart phone</p>
+
+      <p>How many hours a weeek do you spend on electronic devices?</p>
+      <p><input type="radio" name="hours" id="one" /> One</p>
+      <p><input type="radio" name="hours" id="two" /> Two</p>
+      <p><input type="radio" name="hours" id="three+" /> Three +</p>
+
+      <p><label for="comments">Any other comments</label></p>
+      <p>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </p>
+      <input type="submit" value="go">
+    </form>
+  </body>
+</html>
