@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="results">
+            inner html is here
+
+    </p>
+
+    <input value="Joe" placeholder="name" id="nameInput"  type="text">
+    <input value="18" placeholder="age" id="ageInput" type="text">
+    <input value="Brighton" placeholder="location" id="yourLocationInput" type="text">
+    <button onclick="handleClick()"> Click me   </button>
+
+    <script>
+        
+       
+
+        function handleClick() {
+            var name, age, yourLocation;
+           
+            name = document.getElementById("nameInput").value;
+            age =  document.getElementById("ageInput").value;
+            yourLocation = document.getElementById("yourLocationInput").value;
+            
+            var result = "Location: " + yourLocation + " age: " + age+ " name: " + name;
+            document.getElementById("results").innerHTML = result;
+        }
+
+        /*
+        var name, age, yourLocation;
+        name = "Joe";
+        age = 18;
+        yourLocation = "Brighton";
+
+        document.write("<p>Name: " + name + "</p>");
+        document.write("<p>Age: " + age + "</p>");
+        document.write("<p>Location: " + yourLocation + "</p>");
+        */
+        
+    </script>
+    
+</body>
+</html>
