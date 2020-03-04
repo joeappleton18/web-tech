@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
 
-    <p id="results">
-            inner html is here
+    <div id="results">
 
-    </p>
 
-    <input value="Joe" placeholder="name" id="nameInput"  type="text">
-    <input value="18" placeholder="age" id="ageInput" type="text">
-    <input value="Brighton" placeholder="location" id="yourLocationInput" type="text">
-    <button onclick="handleClick()"> Click me   </button>
+    </div>
+    <!-- /#results -->
+
+    <input type="text" id="nameInput" value="Joe">
+    <input type="text" id="ageInput" value="18">
+    <input type="text" id="locationInput" value="Brighton">
+    <button onclick="handleClick()">Click Me NOW!!!!!!!!!!!!!!!!!!!!</button>
 
     <script>
-        
-       
 
         function handleClick() {
-            var name, age, yourLocation;
-           
-            name = document.getElementById("nameInput").value;
-            age =  document.getElementById("ageInput").value;
-            yourLocation = document.getElementById("yourLocationInput").value;
-            
-            var result = "Location: " + yourLocation + " age: " + age+ " name: " + name;
-            document.getElementById("results").innerHTML = result;
+            var nameVal, ageVal, locationVal;
+
+            nameVal = document.getElementById('nameInput').value;
+            ageVal = document.getElementById('ageInput').value;
+            locationVal = document.getElementById('locationInput').value;
+            document.getElementById('results').innerHTML =
+                "name: "
+                + nameVal + "age: "
+                + ageVal + "location: "
+                + locationVal;
+
+              
         }
+       
 
-        /*
-        var name, age, yourLocation;
-        name = "Joe";
-        age = 18;
-        yourLocation = "Brighton";
 
-        document.write("<p>Name: " + name + "</p>");
-        document.write("<p>Age: " + age + "</p>");
-        document.write("<p>Location: " + yourLocation + "</p>");
-        */
-        
     </script>
-    
+
 </body>
+
 </html>

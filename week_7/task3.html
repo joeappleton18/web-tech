@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="results">
+
+
+    </div>
+    <!-- /#results -->
+
+    <input type="number" id="num1Input" value="30">
+    <input type="number" id="num2Input" value="18">
+    <input type="number" id="num3Input" value="20">
+    <button onclick="handleClick()">Click Me NOW!!!!!!!!!!!!!!!!!!!!</button>
+
+    <script>
+
+        function handleClick() {
+            var num1, num2, num3, result;
+            num1 = parseInt(document.getElementById('num1Input').value);
+            num2 = parseInt(document.getElementById('num2Input').value);
+            num3 = parseInt(document.getElementById('num3Input').value);
+
+            result = num1 + num2 + num3;
+
+            document.getElementById("results").innerHTML = "The sum is: " + result;
+
+            debugger;
+        }
+    
+    </script>
+
+</body>
+
+</html>
