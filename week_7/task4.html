@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chatStream">
+            <p> Joe: Hello Everyone  </p>
+    </div>
+    <p><input type="text" id="nameInput" placeholder="name" value="joe">  </p>
+    <p><textarea name="" id="messageInput" cols="30" rows="10" >hello world</textarea></p>
+    <button onclick="handleClick()"> Send Message </button>
+     
+    <script>
+       function handleClick() {
+           var name, message;
+
+           name = document.getElementById("nameInput").value;
+           message = document.getElementById("messageInput").value;
+           document.getElementById('chatStream').innerHTML = "<p>" + name + ": " + message;
+       }
+
+    
+    
+    </script>
+</body>
+</html>
