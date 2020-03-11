@@ -16,8 +16,19 @@ function handleInput() {
 
 
 function handleKeyDown(e) {
-  if (e.code === "Enter") {
-      // if the length < maxLength 
+  
+if (e.code === "Enter") {
+
+    if ( tweetInput.value.length < maxLength && tweetInput.value.length > 0 ) {
+        tweets.push(tweetInput.value);
+        var  tweetOutput ="";
+        for (var i=0; i < tweets.length; i++) {
+            tweetOutput +=  '<p>' + tweets[i] + '</p>'
+        }
+
+        document.getElementById('tweets').innerHTML = tweetOutput;
+    }
+   
       // add tweet to tweets
       // clear the tweet input 
       // render tweets to screen 
