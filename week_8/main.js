@@ -14,7 +14,19 @@ function handleInput() {
     //   tweetLength.style.color = "red" if tweetInput.value.length > maxLength
 }
 
+
+function handleKeyDown(e) {
+  if (e.code === "Enter") {
+      // if the length < maxLength 
+      // add tweet to tweets
+      // clear the tweet input 
+      // render tweets to screen 
+  }
+}
+
+
 function main() {
+    document.addEventListener('keydown', handleKeyDown);
     tweetLength = document.getElementById('tweet-length');
     tweetInput = document.getElementById('tweet-input');
  
