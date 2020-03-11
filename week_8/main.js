@@ -3,7 +3,15 @@ var tweets = [];
 var maxLength = 5;
 // set up a function called handleInput console.log('changed')
 function handleInput() {
-    tweetLength.innerHTML = tweetInput.value.length; 
+    var length = tweetInput.value.length
+    tweetLength.innerHTML = length; 
+    if (length > maxLength) {
+        tweetLength.style.color = "red"      
+    } else {
+        tweetLength.style.color = ""      
+    }
+
+    //   tweetLength.style.color = "red" if tweetInput.value.length > maxLength
 }
 
 function main() {
