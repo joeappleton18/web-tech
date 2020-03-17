@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <script src="main.js"></script>
+  </head>
+  <body onload="main()">
+    <form action="http://google.com" id="contact-form" method="get">
+      <p><input type="text" name="name" id="name" placeholder="name" /></p>
+      <p id="nameRequiredError" class="error" style="display:none; color:red">
+        Name is required
+      </p>
+      <p><input type="email" name="email" id="email" placeholder="email" /></p>
+      <p id="emailRequiredError" class="error" style="display:none;color:red">
+        Email is required
+      </p>
+      <p>I would like to be contacted by</p>
+
+      <p>
+        Portfolio Updates:
+        <input
+          type="checkbox"
+          name="pref"
+          value="folio"
+          id="prefFolio"
+          data-human-desc="Portfolio Updates"
+        />
+      </p>
+      <p>
+        Work Updates:
+        <input
+          type="checkbox"
+          name="pref"
+          value="work"
+          id="work"
+          id="prefWork"
+          data-human-desc="Work Updates"
+        />
+      </p>
+
+      <p id="prefRequiredError" class="error" style="display:none;color:red">
+        You must select a preference
+      </p>
+
+      <p>
+        I agree to being contacted by the methods above: Yes
+        <input type="radio" name="terms" value="yes" id="yesTerms" />
+      </p>
+
+      <p id="termsRequiredError" class="error" style="display:none;color:red">
+        You must tell us if you want to be contacted or not
+      </p>
+      <p>You have selected the following contact methods:</p>
+      <div id="contactMethods"></div>
+      <input type="submit" value="Press me" />
+    </form>
+  </body>
+</html>
